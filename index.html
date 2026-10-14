@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080711">
+  <meta name="description" content="A tiny birthday universe made just for Malkin.">
+  <title>For Malkin ✦ Your Little Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" id="starField" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span>✦</span> a little universe for Malkin</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="navLinks" class="nav-links" aria-label="Main navigation">
+      <a href="#letter">A letter</a>
+      <a href="#open-when">Open when…</a>
+      <a href="#constellation">Our universe</a>
+      <a href="#gift">The gift</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-glow"></div>
+      <p class="eyebrow"><span>✧</span> a small surprise from someone thinking of you <span>✧</span></p>
+      <div class="moon" aria-hidden="true">☾</div>
+      <p class="hero-kicker">for the birthday girl</p>
+      <h1>Happy Birthday,<br><em>Malkin</em><span class="heart"> ♡</span></h1>
+      <p class="hero-copy">Even from a screen away, you deserve a day<br class="desktop-break"> that feels a little more magical.</p>
+      <a class="button button-gold" href="#letter">Step into your surprise <span>↘</span></a>
+      <p class="hero-footnote">made of little thoughts, stars, and birthday wishes</p>
+      <a class="scroll-cue" href="#letter" aria-label="Scroll to the letter"><span></span> scroll gently</a>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-label">01 <span>·</span> a note from me to you</div>
+      <article class="letter-card">
+        <div class="letter-top"><span>✦ birthday letter</span><span>♡</span></div>
+        <p class="script">Hey Malkin,</p>
+        <p class="letter-copy">Happy birthday, you. 💗 We may still be getting to know each other, and there may be miles between our screens, but I’m really glad our paths crossed.</p>
+        <p class="letter-copy">I hope today brings you the kind of happiness that sneaks up on you — a message that makes you grin, a song you can’t stop replaying, a favourite treat, or a moment when everything feels just right.</p>
+        <p class="letter-copy">This little website isn’t a grand thing. It’s just a small way to make you smile and remind you that someone is wishing you a lovely day, a peaceful year, and plenty of reasons to be proud of yourself.</p>
+        <p class="letter-copy">Keep being your own wonderful person, Malkin. I hope this next chapter is kind to you. And I hope this surprise gives you at least one extra reason to smile today. ✨</p>
+        <p class="signoff">Have the loveliest birthday, <span>♡</span></p>
+        <p class="letter-small">P.S. Keep exploring. There are a few more little surprises below.</p>
+      </article>
+    </section>
+
+    <section class="section open-section" id="open-when">
+      <div class="section-label">02 <span>·</span> little notes for different days</div>
+      <div class="center-heading">
+        <h2>Open when… <em>you need it</em></h2>
+        <p class="section-intro">Pick an envelope. A tiny note is waiting inside. ♡</p>
+      </div>
+      <div class="envelope-grid">
+        <button class="envelope" data-letter="smile" aria-haspopup="dialog">
+          <span class="envelope-icon">✉</span><span class="envelope-title">you need a smile</span><span class="envelope-hint">tap to open ↗</span>
+        </button>
+        <button class="envelope" data-letter="miss" aria-haspopup="dialog">
+          <span class="envelope-icon">☾</span><span class="envelope-title">you miss me</span><span class="envelope-hint">tap to open ↗</span>
+        </button>
+        <button class="envelope" data-letter="tough" aria-haspopup="dialog">
+          <span class="envelope-icon">✧</span><span class="envelope-title">today feels tough</span><span class="envelope-hint">tap to open ↗</span>
+        </button>
+        <button class="envelope" data-letter="birthday" aria-haspopup="dialog">
+          <span class="envelope-icon">♡</span><span class="envelope-title">it’s your birthday</span><span class="envelope-hint">tap to open ↗</span>
+        </button>
+      </div>
+      <p class="tiny-note">A small reminder: you don’t have to feel happy every second to deserve good things.</p>
+    </section>
+
+    <section class="section constellation-section" id="constellation">
+      <div class="section-label">03 <span>·</span> a universe of little things</div>
+      <div class="center-heading">
+        <h2>Tap a star, <em>make a memory</em></h2>
+        <p class="section-intro">No photo album needed. Just little things worth celebrating.</p>
+      </div>
+      <div class="constellation-panel">
+        <div class="constellation-sky" id="constellationSky" aria-label="Interactive stars">
+          <svg class="constellation-lines" viewBox="0 0 600 300" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M72 92 L194 54 L300 120 L428 67 L520 156 M194 54 L164 220 L300 120 L380 236 L520 156" />
+          </svg>
+          <button class="constellation-star star-a" data-memory="talks" aria-label="A star for conversations"><span>✦</span></button>
+          <button class="constellation-star star-b" data-memory="laughs" aria-label="A star for laughter"><span>✦</span></button>
+          <button class="constellation-star star-c" data-memory="surprises" aria-label="A star for surprises"><span>✦</span></button>
+          <button class="constellation-star star-d" data-memory="distance" aria-label="A star for distance"><span>✦</span></button>
+          <button class="constellation-star star-e" data-memory="future" aria-label="A star for future memories"><span>✦</span></button>
+          <span class="sky-label label-a">little talks</span><span class="sky-label label-b">laughs</span><span class="sky-label label-c">surprises</span><span class="sky-label label-d">miles apart</span><span class="sky-label label-e">what’s ahead</span>
+        </div>
+        <div class="memory-detail" id="memoryDetail" aria-live="polite">
+          <span class="detail-star">✧</span>
+          <p class="detail-title">Choose a star above</p>
+          <p class="detail-copy">Each one holds a small thought. Tap around and see what you find.</p>
+        </div>
+      </div>
+      <div class="memory-cards">
+        <article class="mini-memory"><span>01 / connection</span><h3>Little talks</h3><p>Sometimes a simple conversation can make an ordinary day feel brighter.</p></article>
+        <article class="mini-memory"><span>02 / joy</span><h3>Random laughs</h3><p>May life keep giving you silly moments and reasons to laugh until your cheeks hurt.</p></article>
+        <article class="mini-memory"><span>03 / possibility</span><h3>More to come</h3><p>There are still so many stories, songs, and memories waiting to be discovered.</p></article>
+      </div>
+    </section>
+
+    <section class="section gift-section" id="gift">
+      <div class="section-label">04 <span>·</span> one last little surprise</div>
+      <div class="gift-card">
+        <div class="gift-halo"></div>
+        <div class="gift" aria-hidden="true">
+          <div class="gift-bow bow-left"></div><div class="gift-bow bow-right"></div>
+          <div class="gift-lid"></div><div class="gift-box"><span></span></div>
+        </div>
+        <p class="eyebrow">something small, just for you</p>
+        <h2>A wish for <em>your next chapter</em></h2>
+        <p class="gift-copy">Take a tiny pause, make a birthday wish, then open your gift.</p>
+        <button class="button button-rose" id="giftButton">Open your gift ♡</button>
+        <div class="gift-reveal" id="giftReveal" hidden>
+          <div class="confetti-line">✦　♡　✧　♡　✦</div>
+          <h3>Surprise, Malkin!</h3>
+          <p>I hope your new year is full of kind people, brave little beginnings, unexpected happiness, and dreams that start coming true. May you feel appreciated on the quiet days, celebrated on the big ones, and proud of the person you’re becoming.</p>
+          <p class="gift-final">Happy birthday, Malkin. Keep a little magic for yourself. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="closing-star">✦</div>
+      <p class="closing-small">one last thing to remember</p>
+      <h2>You deserve<br><em>lovely things.</em></h2>
+      <p class="closing-note">I hope this little corner of the internet made you smile today.</p>
+      <a href="#home" class="back-top">Return to the stars ↑</a>
+    </section>
+  </main>
+
+  <dialog class="letter-dialog" id="letterDialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close letter">×</button>
+    <span class="dialog-symbol" id="dialogSymbol">♡</span>
+    <p class="dialog-eyebrow">a little note for you</p>
+    <h2 id="dialogTitle">Dear Malkin…</h2>
+    <p id="dialogMessage"></p>
+    <button class="button button-gold" id="dialogOkay">Keep this note ♡</button>
+  </dialog>
+
+  <footer><span>made with care</span><span class="footer-heart">♡</span><span>for Malkin · a little midnight magic</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
